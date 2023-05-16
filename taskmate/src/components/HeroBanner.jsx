@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
+
 function HomeBanner() {
   const router = useRouter();
   const [image, setImage] = useState(1);
