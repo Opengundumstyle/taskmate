@@ -48,9 +48,14 @@ function AuthWrapper({ type }) {
             <div className="flex flex-col gap-5">
                  <input type="password" name="password" placeholder="Password" className="border border-slate-300 p-3 w-80"/>
             </div>
+            <button className="bg-[#1DBF73] text-white px-12 text-lg font-semibold rounded-r-md p-3 w-80">Continue</button>
           </div>
+                <div className="py-5 w-full flex items-center justify-center border-t border-r-slate-400 ">
+                    <span className="text-sm text-slate-700">Not a memeber yet ? {" "}
+                    <span className="text-[#1DBF73] cursor-pointer ">Join Now</span></span> 
+                </div>
           </div>
-          </div>
+        </div>
     </div>
   );
 }
