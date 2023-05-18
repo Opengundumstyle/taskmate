@@ -1,4 +1,4 @@
-
+import AuthWrapper from "@/components/AuthWrapper";
 import Companies from "@/components/Landing/Companies";
 import Everything from "@/components/Landing/Everything";
 import FiverrBusiness from "@/components/Landing/FiverrBusiness";
@@ -20,6 +20,7 @@ function Index() {
       <Services />
       <FiverrBusiness />
       <JoinFiverr/>
+      <AuthWrapper/>
     </div>
   );
 }
