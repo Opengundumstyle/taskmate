@@ -42,6 +42,12 @@ function AuthWrapper({ type }) {
                 <span className="bg-white relative z-10 px-2">OR</span>
               </span>
             </div>
+            <div className="flex flex-col gap-5">
+                 <input type="text" name="email" placeholder="Email" className="border border-slate-300 p-3 w-80"/>
+            </div>
+            <div className="flex flex-col gap-5">
+                 <input type="password" name="password" placeholder="Password" className="border border-slate-300 p-3 w-80"/>
+            </div>
           </div>
           </div>
           </div>
