@@ -6,10 +6,12 @@ import HeroBanner from '@/components/Landing/HeroBanner'
 import JoinFiverr from "@/components/Landing/JoinFiverr";
 import PopularServices from "@/components/Landing/PopularServices";
 import Services from "@/components/Landing/Services";
+import { useStateProvider } from "@/context/StateContext";
 import React from "react";
 
 function Index() {
   
+const [{showLoginModal,showSignupModal}] = useStateProvider()
 
   return (
     <div>
@@ -20,7 +22,8 @@ function Index() {
       <Services />
       <FiverrBusiness />
       <JoinFiverr/>
-      <AuthWrapper/>
+      {(showLoginModal|| showSignupModal) &&  <AuthWrapper type={showLoginModal?"login":"signup"}/>}
+     
     </div>
   );
 }
